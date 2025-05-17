@@ -24,3 +24,15 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@layer base {
+  a {
+    @apply text-orange-400;
+  }
+}
+
+@layer components {
+  .primary-btn {
+    @apply w-full bg-orange-400 text-white text-lg text-center rounded-md hover:bg-orange-300 transition-colors;
+  }
+}
